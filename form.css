@@ -3,10 +3,10 @@
   margin: 0;
   box-sizing: border-box;
   color: #fff;
+  font-family: "Rubik", sans-serif;
 }
 header {
   width: 100%;
-
   background-color: #fff;
   margin: 0 auto;
   position: fixed;
@@ -36,41 +36,121 @@ nav a {
   text-transform: uppercase;
   color: rgb(38, 121, 209);
   margin: 0 1rem;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 18px;
+}
+nav a i {
+  color: rgb(38, 121, 209);
 }
 
 .nav-items a i {
   padding-right: 4px;
 }
 main {
-  background-image: url("./kaleidico-RDYdOvk8ats-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.image-overlay {
-  height: calc(100vh - 70px);
+  background-color: rgb(38, 121, 209);
   display: flex;
   flex-direction: column;
-
   align-items: center;
-  background: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  height: calc(150vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
 }
+
 .active {
   background-color: rgb(38, 121, 209);
   color: #fff;
   padding: 10px;
 }
-main {
-  margin-top: 5rem;
+.active i {
+  color: #fff;
 }
-form {
-  margin-top: 2rem;
+
+.container {
   font-size: 1.2rem;
+  background-color: #fff;
+  height: 120vh;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-top: 5px;
 }
 
 h2 {
-  margin-top: 5rem;
-  font-size: 3rem;
+  margin-top: 2rem;
+  font-size: 2rem;
   text-transform: capitalize;
-  color: rgb(38, 121, 209);
+  color: #fff;
+  font-style: italic;
 }
+input {
+  display: block;
+  color: #000000;
+  border-radius: 5%;
+  padding: 5px 20px;
+  border-radius: 15px;
+  outline: none;
+  font-weight: 600;
+  padding-left: 3px;
+  margin-top: 8px;
+  margin-left: 3px;
+}
+form div {
+  color: rgb(38, 121, 209);
+  text-transform: uppercase;
+  margin-top: 25px;
+  font-weight: 500;
+}
+.gender {
+  display: flex;
+  justify-content: space-between;
+}
+.date {
+  padding-right: 35px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+.btn button {
+  padding: 4% 15%;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: rgb(38, 121, 209);
+  cursor: pointer;
+}
+.btn button:hover {
+  background-color: #fff;
+  color: rgb(38, 121, 209);
+  border: 2px solid rgb(38, 121, 209);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 85%;
+  }
+  h2 {
+    font-size: 15px;
+  }
+}
+/* @media (max-width: 700px) {
+  .container {
+    width: 40%;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: 70%;
+  }
+} */

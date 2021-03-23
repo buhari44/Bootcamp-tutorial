@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
@@ -14,42 +19,54 @@
             </div>
             <div class="nav-items">
                 <a href="./index.html" ><i class="fas fa-home"></i>home</a>
-                <a href="./form.html" class="active">form</a>
+                <a href="./form.html" class="active"><i class="fab fa-wpforms"></i>form</a>
                 <a href="./display.html">profile</a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="image-overlay">
-            
+        
+          
        <h2>bootcamp participant form</h2>
+        <div class="container">
         <form action="">
             <div class="fname">
             <label for="firstname"></label>
-           firstname <input type="text">
+           firstname <input type="text" placeholder="kelechi" required>
             </div>
             <div class="lname">
             <label for="lastname"></label>
-           lastname <input type="text">
+           lastname <input type="text" placeholder="john" required>
+            </div>
+            <div class="mail">
+            <label for="mail"></label>
+           email <input type="email" placeholder="codemate@gmail.com" required>
             </div>
             <div class="address">
             <label for="address"></label>
-           address<input type="address">
+           address<input type="address" placeholder="No 2, yaba lagos" required>
             </div>
             <div class="department">
             <label for="department"></label>
-           department<input type="text">
+           department<input type="text" placeholder="computer science" required>
+            </div>
+            <div class="dob">
+            <label for="dob"></label>
+           date of birth<input type="date" class="date">
             </div>
             <div class="gender">
             
            male<input type="radio">
            female<input type="radio">
-
-
+          
             </div>
             
+            <div class="btn">
+            <button type="submit">submit</button>
+            </div>
         </form>
         </div>
+        
     </main>
     
 </body>
